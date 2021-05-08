@@ -1,6 +1,5 @@
 # Unit 4 Homework Assignment: A Whale Off the Port(folio)
 
-![Portfolio Analysis](Images/portfolio-analysis.png)
 
 ## Background
 
@@ -45,7 +44,6 @@ First, read and clean several CSV files for analysis. The CSV files include whal
 
 5. Join `Whale Returns`, `Algorithmic Returns`, and the `S&P 500 Returns` into a single DataFrame with columns for each portfolio's returns.
 
-    ![returns-dataframe.png](Images/returns-dataframe.png)
 
 ### Conduct Quantitative Analysis
 
@@ -110,36 +108,6 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
 4. How does your portfolio do?
 
 ---
-
-## Resources
-
-* [Pandas API Docs](https://pandas.pydata.org/pandas-docs/stable/reference/index.html)
-
-* [Exponential weighted function in Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.ewm.html)
-
-* [`GOOGLEFINANCE` function help](https://support.google.com/docs/answer/3093281)
-
-* [Supplemental Guide: Fetching Stock Data Using Google Sheets](../../../01-Lesson-Plans/04-Pandas/Supplemental/googlefinance_guide.md)
-
----
-
-## Hints
-
-* After reading each CSV file, don't forget to sort each DataFrame in ascending order by the Date using `sort_index`. This is especially important when working with time series data, as we want to make sure Date indexes go from earliest to latest.
-
-* The Pandas functions used in class this week will be useful for this assignment.
-
-* Be sure to use `head()` or `tail()` when you want to look at your data, but don't want to print to a large DataFrame.
-
----
-
-## Submission
-
-1. Use the provided starter Jupyter Notebook to house the code for your data preparation, analysis, and visualizations. Put any analysis or answers to assignment questions in raw text (markdown) cells in the report.
-
-2. Submit your notebook to a new GitHub repository.
-
-3. Add the URL of your GitHub repository to your assignment when submitting via Bootcamp Spot.
 
 ---
 
