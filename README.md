@@ -1,34 +1,22 @@
-# Unit 4 Homework Assignment: A Whale Off the Port(folio)
+# A Whale Off the Port(folio)
 
 
 ## Background
 
 Harold's company has been investing in algorithmic trading strategies. Some of the investment managers love them, some hate them, but they all think their way is best.
 
-You just learned these quantitative analysis techniques with Python and Pandas, so Harold has come to you with a challenge—to help him determine which portfolio is performing the best across multiple areas: volatility, returns, risk, and Sharpe ratios.
+We just learned these quantitative analysis techniques with Python and Pandas, so Harold has come with a challenge—to help him determine which portfolio is performing the best across multiple areas: volatility, returns, risk, and Sharpe ratios.
 
-You need to create a tool (an analysis notebook) that analyzes and visualizes the major metrics of the portfolios across all of these areas, and determine which portfolio outperformed the others. You will be given the historical daily returns of several portfolios: some from the firm's algorithmic portfolios, some that represent the portfolios of famous "whale" investors like Warren Buffett, and some from the big hedge and mutual funds. You will then use this analysis to create a custom portfolio of stocks and compare its performance to that of the other portfolios, as well as the larger market ([S&P 500 Index](https://en.wikipedia.org/wiki/S%26P/TSX_60)).
-
-For this homework assignment, you have three main tasks:
-
-1. [Read in and Wrangle Returns Data](#Prepare-the-Data)
-
-2. [Determine Success of Each Portfolio](#Conduct-Quantitative-Analysis)
-
-3. [Choose and Evaluate a Custom Portfolio](#Create-a-Custom-Portfolio)
+We need to create a tool (an analysis notebook) that analyzes and visualizes the major metrics of the portfolios across all of these areas, and determine which portfolio outperformed the others. We have given the historical daily returns of several portfolios: some from the firm's algorithmic portfolios, some that represent the portfolios of famous "whale" investors like Warren Buffett, and some from the big hedge and mutual funds. We then use this analysis to create a custom portfolio of stocks and compare its performance to that of the other portfolios, as well as the larger market ([S&P 500 Index](https://en.wikipedia.org/wiki/S%26P/TSX_60)).
 
 ---
-
-## Instructions
-
-**File:** [Whale Analysis Starter Code](Starter_Code/whale_analysis.ipynb)
 
 
 ### Prepare the Data
 
-First, read and clean several CSV files for analysis. The CSV files include whale portfolio returns, algorithmic trading portfolio returns, and S&P 500 historical prices. Use the [Whale Analysis Starter Code](Starter_Code/whale_analysis.ipynb) to complete the following steps:
+First, we read and clean several CSV files for analysis. The CSV files include whale portfolio returns, algorithmic trading portfolio returns, and S&P 500 historical prices. Use the [Whale Analysis Starter Code](Starter_Code/whale_analysis.ipynb) to complete the following steps:
 
-1. Use Pandas to read the following CSV files as a DataFrame. Be sure to convert the dates to a `DateTimeIndex`.
+1. Using Pandas to read the following CSV files as a DataFrame.
 
     * `whale_returns.csv`: Contains returns of some famous "whale" investors' portfolios.
 
@@ -79,7 +67,7 @@ An alternative method to calculate a rolling window is to take the exponentially
 
 ### Sharpe Ratios
 
-Investment managers and their institutional investors look at the return-to-risk ratio, not just the returns. After all, if you have two portfolios that each offer a 10% return, yet one is lower risk, you would invest in the lower-risk portfolio, right?
+Investment managers and their institutional investors look at the return-to-risk ratio, not just the returns. After all, if we have two portfolios that each offer a 10% return, yet one is lower risk, we would invest in the lower-risk portfolio, right?
 
 1. Using the daily returns, calculate and visualize the Sharpe ratios using a bar plot.
 
@@ -87,15 +75,15 @@ Investment managers and their institutional investors look at the return-to-risk
 
 ### Create a Custom Portfolio
 
-Harold is ecstatic that you were able to help him prove that the algorithmic trading portfolios are doing so well compared to the market and whales portfolios. However, now you are wondering whether you can choose your own portfolio that performs just as well as the algorithmic portfolios. Investigate by doing the following:
+Harold is ecstatic that you were able to help him prove that the algorithmic trading portfolios are doing so well compared to the market and whales portfolios. However, now we are wondering whether we can choose our own portfolio that performs just as well as the algorithmic portfolios. Investigate by doing the following:
 
-1. Visit [Google Sheets](https://docs.google.com/spreadsheets/) and use the built-in Google Finance function to choose 3-5 stocks for your portfolio.
+1. Visit [Google Sheets](https://docs.google.com/spreadsheets/) and use the built-in Google Finance function to choose 3-5 stocks for our portfolio.
 
 2. Download the data as CSV files and calculate the portfolio returns.
 
-3. Calculate the weighted returns for your portfolio, assuming equal number of shares per stock.
+3. Calculate the weighted returns for our portfolio, assuming equal number of shares per stock.
 
-4. Add your portfolio returns to the DataFrame with the other portfolios.
+4. Add our portfolio returns to the DataFrame with the other portfolios.
 
 5. Run the following analyses:
 
@@ -105,10 +93,3 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
     * Calculate and plot beta for your portfolio compared to the S&P 60 TSX.
     * Calculate the Sharpe ratios and generate a bar plot.
 
-4. How does your portfolio do?
-
----
-
----
-
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
